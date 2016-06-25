@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="TVImagesIoT.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TVImagesIoT"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Background="Black">
+        <TextBlock Name="startLogText" Height="1080" Width="1920" CharacterSpacing="9" Foreground="Green" FontSize="24" FontFamily="Copperplate Gothic Bold" HorizontalAlignment="Left"></TextBlock>
+        <ProgressBar Name="pg1" Height="10" VerticalAlignment="Stretch" IsIndeterminate="True" Visibility="Collapsed"/>
+        <Image Name="mainImage1" Width="1920" Height="1080" Source="Assets/PeakIntranet.jpg" ImageFailed="mainImage_ImageFailed" ImageOpened="mainImage1_ImageOpened" Stretch="Fill" Visibility="Collapsed"/>
+        <Image Name="mainImage2" Width="1920" Height="1080" Source="Assets/PeakIntranet.jpg" ImageFailed="mainImage_ImageFailed" ImageOpened="mainImage1_ImageOpened" Stretch="Fill" Visibility="Collapsed"/>
+    </StackPanel>
+
+    <Page.BottomAppBar>
+        <CommandBar Name="cmdbar" ClosedDisplayMode="Hidden" RequestedTheme="Dark" IsTapEnabled="True">
+            <AppBarButton Name="RefreshButton" Label="Start Download" MinWidth="100" Icon="Refresh" Click="AppBarButtonRefresh_Click"/>
+            <AppBarToggleButton Name="ImageRotateButton" Label="ImageRotate" MinWidth="150" Icon="Pictures" Click="AppBarToggleButton_Click"/>
+            <AppBarToggleButton Name="DownloadToggleButton" Label="ImageDownload" MinWidth="150" Icon="Sync" Click="DownloadToggleButton_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>

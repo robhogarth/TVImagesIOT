@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GenerateXMLConsole.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Website" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://caz.intranet.newgold.com</Value>
+    </Setting>
+    <Setting Name="List" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Peak Images</Value>
+    </Setting>
+    <Setting Name="SubSite" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="OutputFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\inetpub\wwwroot\data.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
